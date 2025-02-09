@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", serif;
+}
+body{
+    background-color: #F1E5D1;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.outer-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    z-index: 2;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #D5ABAB;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: perspective(2000px) rotateZ(0deg);
+    transform-style: preserve-3d;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2),
+    inset 300px 0 50px rgba(0, 0, 0, 0.2);
+    transition: all 1s ease-in-out;
+}
+.toggle-rotate {
+    transform: perspective(2000px) rotateZ(10deg);
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1),
+    inset 20px 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.content p{
+    font-size: 1.2rem;
+}
+.cta-btn{
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #953738;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+.text-content{
+    position: absolute;
+    border-radius: 10px;
+    z-index: 3;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-content h2{
+    font-family: "Dancing Script", serif;
+    color: white;
+    font-size: 3.7em;
+}
+.text-content h1{
+    font-family: "Dancing Script", serif;
+    color: white;
+    font-size: 3.5em;
+}
+.cover img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.cover img:nth-child(2){
+    transform: rotateY(180deg);
+    z-index: 3;
+}
+.toggle{
+    transform: rotateY(-135deg);
+}
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    > p{
+        font-size: 1.3rem;
+        color: white;
+    }
+}
+.content h2{
+    font-size: 3rem;
+}
+.content p{
+    font-size: 2rem;
+    max-width: 260px;
+    text-align: center;
+}
+.open-cta{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #953738;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.open-cta:hover, .cta-btn:hover{
+    background-color: #7a2f2f;
+}
+.open-cta:hover{
+    transform: translateY(-4px);
+}
+
