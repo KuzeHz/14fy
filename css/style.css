@@ -54,7 +54,7 @@ body{
     flex-direction: column;
 }
 .content p{
-    font-size: 1.2rem;
+    font-size: 1.5rem !important;
 }
 .cta-btn{
     border: none;
@@ -63,7 +63,7 @@ body{
     border-radius: 10px;
     background-color: #953738;
     color: white;
-    font-size: 1.5em;
+    font-size: 1em;
     cursor: pointer;
     transition: all .5s ease;
 }
