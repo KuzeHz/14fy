@@ -1,19 +1,18 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main  # Change this if you deploy from a different branch
+  deployment:
+    types: [deployment]
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
