@@ -17,7 +17,11 @@
   </head>
   <body>
     <div class="container" data-aos="zoom-in">
-      <h1 class="text-center my-4">Music Playlist</h1>
+      <div class="container btn-container">
+        <button class="playlist-btn" onclick="history.back()">Back</button>
+        <h1 class="text-center my-4">Music Playlist</h1>
+        <button class="playlist-btn" onclick="history.back()">Next</button>
+      </div>      
       <div class="grid-container">
         <!-- Left Side: Selected Music Card -->
         <div class="selected-song">
@@ -36,7 +40,7 @@
             <div
               class="progress"
               id="progress"
-              style="width: 50%; height: 5px; background: #555"
+              style="width: 50%; background: #555"
             ></div>
           </div>
           <p id="time-counter" class="text-center">
@@ -126,6 +130,22 @@
               <p class="mb-0">The 1975</p>
             </div>
             <p class="ms-auto mb-0 pe-4">5:26</p>
+          </div>
+
+          <div
+            class="song-card d-flex align-items-center p-2 rounded"
+            onclick="selectSong(4)"
+          >
+            <img
+              src="img/Songs Thumbnail/Amazing.png"
+              alt="Amazing"
+              class="rounded me-3"
+            />
+            <div class="song-info flex-grow-1">
+              <h5 class="mb-1 fw-bold">Amazing</h5>
+              <p class="mb-0">Rex Orange Country</p>
+            </div>
+            <p class="ms-auto mb-0 pe-4">3:26</p>
           </div>
         </div>
       </div>
