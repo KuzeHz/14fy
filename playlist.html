@@ -17,11 +17,12 @@
   </head>
   <body>
     <div class="container" data-aos="zoom-in">
-      <div class="container btn-container">
-        <button class="playlist-btn" onclick="history.back()">Back</button>
-        <h1 class="text-center my-4">Music Playlist</h1>
-        <button class="playlist-btn" onclick="history.back()">Next</button>
-      </div>      
+      <div class="btn-container mb-3">
+        <button class="playlist-btn" onclick="history.back()"><i class="fa-solid fa-chevron-left"></i></button>
+        <h1 class="my-2">Music Playlist</h1>
+        <button class="playlist-btn" onclick="history.back()"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>  
+          
       <div class="grid-container">
         <!-- Left Side: Selected Music Card -->
         <div class="selected-song">
@@ -146,6 +147,22 @@
               <p class="mb-0">Rex Orange Country</p>
             </div>
             <p class="ms-auto mb-0 pe-4">3:26</p>
+          </div>
+
+          <div
+            class="song-card d-flex align-items-center p-2 rounded"
+            onclick="selectSong(5)"
+          >
+            <img
+              src="img/Songs Thumbnail/Love Story.png"
+              alt="Amazing"
+              class="rounded me-3"
+            />
+            <div class="song-info flex-grow-1">
+              <h5 class="mb-1 fw-bold">Love Story</h5>
+              <p class="mb-0">Taylor Swift</p>
+            </div>
+            <p class="ms-auto mb-0 pe-4">3:54</p>
           </div>
         </div>
       </div>
