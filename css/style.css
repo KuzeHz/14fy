@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -57,6 +58,8 @@ body{
     font-size: 1.5rem !important;
 }
 .cta-btn{
+    font-family: "Roboto Condensed", serif;
+    font-style: italic;
     border: none;
     outline: none;
     padding: 10px 40px;
@@ -123,6 +126,8 @@ footer{
     justify-content: center;
     padding: 10px;
     > p{
+        font-family: "Roboto Condensed", serif;
+        font-style: italic;
         font-size: 1.3rem;
         color: white;
     }
@@ -131,24 +136,30 @@ footer{
     font-size: 3rem;
 }
 .content p{
+    font-family: "Roboto Condensed", serif;
+    font-style: italic;
     font-size: 2rem;
     max-width: 260px;
     text-align: center;
 }
 .open-cta{
+    font-family: "Roboto Condensed", serif;
+    font-style: italic;
     width: 100%;
     border: none;
     outline: none;
     height: 50px;
     border-radius: 10px;
-    background-color: #953738;
-    color: white;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 5px #953738; /* Creates the inside border */
+    color: #953738;
     font-size: 2rem;
     cursor: pointer;
-    transition: all .5s ease;
+    transition: all .5s ease-in-out;
 }
 .open-cta:hover, .cta-btn:hover{
-    background-color: #7a2f2f;
+    background-color: #953738;
+    color: #fff;
 }
 .open-cta:hover{
     transform: translateY(-4px);
