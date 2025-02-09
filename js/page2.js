@@ -2,7 +2,7 @@ const songs = [
   { title: "Dilaw", artist: "Maki", src: "music/Dilaw.mp3", duration: "3:12", img: "img/Songs Thumbnail/Dilaw.png" },
   { title: "Autumn", artist: "NIKI", src: "music/Autumn.mp3", duration: "3:52", img: "img/Songs Thumbnail/Autumn.png" },
   { title: "Take A Chance With Me", artist: "NIKI", src: "music/Take A Chance With Me.mp3", duration: "5:01", img: "img/Songs Thumbnail/Autumn.png" },
-  { title: "About You", artist: "The 1975", src: "music/About You.mp3", duration: "5:26", img: "img/Songs Thumbnail/About You.png" }
+  { title: "About You", artist: "The 1975", src: "music/About You.mp3", duration: "5:26", img: "img/Songs Thumbnail/About-you.png" }
 ];
   
   let currentSongIndex = 0;
